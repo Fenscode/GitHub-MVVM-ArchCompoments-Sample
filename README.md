@@ -1,8 +1,4 @@
-# Github-Repo-Sample
-A demo app in android to showcase clean architecture:</br>
-  * DataBinding
-  * LiveData
-  * ViewModel
-  * MVVM Architecture
-  * RxJava, RxAndroid
-  * Written in Kotlin
+
+# GitHub-MVVM-ArchCompoments-Sample
+This is the simple application which was built with using Android Architecture components (ViewModel, LiveData, Paging), clean app's architecture pattern (MVVM)
+

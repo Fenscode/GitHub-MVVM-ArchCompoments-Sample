@@ -19,9 +19,13 @@ class GithubDetailActivity: AppCompatActivity(), AppConstants {
 
         binding = DataBindingUtil.setContentView(this, R.layout.activity_repo_detail)
 
-        val repository = intent.getParcelableExtra<Repository>(INTENT_DETAIL)
-        binding.repository = repository
+        try {
+            val repository = intent.getParcelableExtra<Repository>(INTENT_DETAIL)
+            binding.repository = repository
 
-        Picasso.get().load(repository.owner.avatarUrl).placeholder(R.mipmap.ic_launcher).into(binding.repoImage)
+            Picasso.get().load(repository.owner.avatarUrl).placeholder(R.mipmap.ic_launcher).into(binding.repoImage)
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
     }
 }

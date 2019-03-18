@@ -41,6 +41,7 @@ data class Repository(
         get() =  AppUtils.getDate(createdAt)
 
 
+    @Suppress("NULLABILITY_MISMATCH_BASED_ON_JAVA_ANNOTATIONS")
     constructor(parcel: Parcel) : this(
             parcel.readInt(),
             parcel.readString(),
